@@ -1,13 +1,11 @@
 version: "3.7"
-
 services:
   n8n:
     build: .
     ports:
       - "5678:5678"
     environment:
-      - N8N_ENCRYPTION_KEY=__CHANGE_ME__
-      - N8N_HOST=0.0.0.0
+      - N8N_ENCRYPTION_KEY=changeme-super-secret-key
       - N8N_PORT=5678
       - EXECUTIONS_PROCESS=queue
       - QUEUE_MODE=true
