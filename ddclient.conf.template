@@ -1,0 +1,9 @@
+daemon=300
+syslog=yes
+use=web, web=checkip.dyndns.org
+ssl=yes
+protocol=cloudflare
+login=your_cloudflare_email@example.com
+password='your_cloudflare_api_token'
+zone=yourdomain.com
+your.domain.com
